@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contar Pares</title>
+</head>
+<body>
+
+  <h1>Exercício 2 — Contagem de números pares</h1>
+
+  <script>
+    function contarPares(vetor) {
+      let quantidade = 0;
+      for (let i = 0; i < vetor.length; i++) {
+        if (vetor[i] % 2 === 0) {
+          quantidade++;
+        }
+      }
+      return quantidade;
+    }
+    let numeros = [2, 3, 4, 7, 10];
+    let resultado = contarPares(numeros);
+
+    console.log("Quantidade de pares:", resultado);
+    document.write("Quantidade de pares: " + resultado);
+  </script>
+
+</body>
+</html>
